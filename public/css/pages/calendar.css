@@ -1,0 +1,112 @@
+body{
+    width:100%;
+    margin:0;
+    padding:0;
+}
+.navigation-bar{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+head{
+    display: block;
+}
+@media(max-width:400px){
+    .nav-left,.nav-right{
+        display: none;
+
+    }
+    .hamburger{
+        position:absolute;
+        top: 0%;
+        right: 0%;
+        background-color:black;
+        color: aliceblue;
+    }
+}
+@media(min-width:400px)
+{
+    .hamburger{
+        display: none;
+    }
+    .nav-list>li{
+        list-style: none;
+        display:inline;
+
+}
+}
+.full-content{
+  width:90%;
+  margin:0% 5% 0% 5%;
+}
+ul{
+    margin:0%;
+    padding-left: 76.8px;
+    padding-right: 76.8px; 
+    padding-top: 5px ; 
+    padding-bottom: 5px ;  
+} 
+.nav-list>li{
+     list-style: none;
+     display:inline;
+}
+.nav{
+    color:black;
+    opacity:0.8;
+    padding:4px;
+}
+.nav:hover{
+    background-color: rgb(185, 200, 216);
+    opacity:1;
+}
+button{
+font-size: 16px;
+border: none;
+color: gray;
+}
+
+.nav-right,.saturday{
+  font-size: 16px; 
+  color: gray; 
+}                                         
+
+.date>div{
+  display: flex; 
+  justify-content: space-between;
+}
+.date-picker{
+    padding-top:15px;
+}
+.grids{
+    display: grid;
+    gap: 20px;
+  
+}
+.num{
+    position: relative;
+}
+.items{
+    background-color: aqua;
+    height:50px;
+    
+}
+
+.grid-content{
+   
+    margin:6px 5px 2px 5px;
+    padding:2px 5px ;
+    background-color: rgb(255, 192, 250);
+}
+h5{
+    margin:0;
+    padding: 0%;
+}
+hr{
+    margin:0;
+}
+.p-6,.p-8{
+    margin:0;
+    font-size:10px;
+}
+

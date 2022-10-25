@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="/css/pages/calendar.css">
+    <link rel="stylesheet" href="/css/utils.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href="dist/hamburgers.css" rel="stylesheet">
+    <link rel="stylesheet" href="/external/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="/external/normalize.css">
+</head>
+<body>
+    <nav class="navigation-bar">
+        <ul class="nav-list nav-left">
+            <li><a href="#" class="nav">Calendar</a></li>
+            <li><a href="/meetings.html" class="nav">Meetings</a></li>
+            <li><a href="#" class="nav">Teams</a></li>
+        </ul>
+        <ul class="nav-list nav-right">
+            <li>Hello <a href="#"> pragyayadav@gmail.com</li></a>&nbsp
+            <li><button type="button">Logout</button></li>
+     </ul>
+     <button class="hamburger" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>  
+    </nav>
+    <div class="full-content">
+    <h2>Calendar</h2>
+    <hr>
+    <div class="date">
+        <div class="nav-list">
+            <p>12 September 2020<br>
+            <span class="saturday">Saturday</span></p>
+            <div class="date-picker"><form action="/action_page.php">
+                <label for="birthday"></label>
+                <input type="date" id="birthday" name="birthday"></form>
+            </div>
+        </div>
+    </div>
+
+    <div class="grids">
+       <div class="items">1</div>
+       <div class="items">2</div>
+       <div class="items">3</div>
+       <div class="items">4</div>
+       <div class="items">5</div>
+       <div class="items">
+       <div class="grid-content 6">
+        <h5>Project:Kickoff</h5>
+        <hr>
+        <p class="p-6">Attendees:pragya@gmail.com , shreya@gmail.com</p>
+       </div>
+       
+       </div>
+       <div class="items">7</div>
+       <div class="items">
+        <div class="grid-content 8">
+            <h5>AWS: Architecture</h5>
+            <hr>
+            <p class="p-8">Attendees:pragya@gmail.com , shreya@gmail.com</p>
+           </div>
+       </div>
+       <div class="items">9</div>
+     </div>
+    </div>
+</body>
+</html>
