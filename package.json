@@ -5,17 +5,19 @@
   "main": "index.js",
   "scripts": {
     "copy": "cpx \"node_modules/{normalize.css/normalize.css,@fortawesome/fontawesome-free}/**/*\" public/external",
-    "start": "live-server --mount=/:public"
+    "start": "live-server --mount=/:public --port=4000 --open=/calendar.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.2.0",
-    "normalize.css": "^8.0.1"
-  },
   "devDependencies": {
     "cpx": "^1.5.0",
     "live-server": "^1.2.2"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.0",
+    "bootstrap": "^5.2.3",
+    "hamburger-menu": "^0.5.0",
+    "normalize.css": "^8.0.1"
   }
 }

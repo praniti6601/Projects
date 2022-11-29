@@ -1,0 +1,85 @@
+.search-button>li{
+   padding: 5px;
+    margin:0;
+    font-size: 16px;
+}
+.search-button>li:hover{
+    border: 1px solid black;
+    border-bottom: 0px;
+    color: black;
+}
+
+
+.search>ul{
+    padding:0;
+    border-bottom: 2px;
+}
+.search-content{
+    background-color: aqua;
+    display: block;
+    border-radius: 3px;
+    
+}
+h3{
+    padding: 12px 12px 0 12px;
+    margin-bottom: 0;
+    color: white;
+
+}
+.form-maker{
+    padding: 12px;
+}
+.big-box,.dropdown-btn,textarea{
+    width: 98%;
+    border-radius: 3px;
+}
+.form-maker>label{
+    padding-top:15px;
+    padding-bottom: 15px;   
+}
+option {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.big-box{
+    margin:10px 0 10px 0;
+   
+}
+.search-btn{
+    color: white;
+    background-color: darkcyan;
+    padding:6px;
+    border-radius: 3px;
+}
+.criteria-box{
+    border:1px solid black;
+    padding: 10px;
+}
+h4,h5{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 6px;
+}
+.time{
+    font-size: 15px;
+    color:darkgrey;
+}
+.excuse-btn{
+    color: white;
+    background-color: red;
+    padding:6px;
+    font-size: 16px;
+    border-radius: 3px;
+}
+.attendees{
+    margin:0;
+    padding-top: 5px;
+    padding-bottom: 6px;
+    font-size: 14px;
+}
+.add{
+    width:55px;
+    padding:5px;
+}

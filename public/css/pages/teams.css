@@ -1,0 +1,85 @@
+.view{
+    color: rgb(132, 124, 124);
+}
+.grid-boxes{
+    display: inline-grid;
+    gap:30px;
+    grid-template-columns: 420px 420px 420px;
+    height: 400px;
+
+    
+}
+@media(max-width:600px){
+    .grid-boxes{
+    display: inline-grid;
+    gap:30px;
+    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+    
+}
+.plus{
+   width:.5px !important;
+   height:.5px !important;
+}
+}
+.grid-content{
+    border: 2px solid black;
+    padding: 15px;
+    border-radius: 3px;
+}
+h3,h5{
+    margin: 0%;
+}
+.p-1{
+    margin:0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    color: rgb(108, 105, 105);
+}
+.mailID{
+    font-size:17px ;
+    font-weight: bold;
+    color: rgb(73, 71, 71);
+}
+.excuse-btn{
+    color: white;
+    background-color: red;
+    padding:6px;
+    font-size: 16px;
+    border-radius: 3px;
+}
+option {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.search-btn{
+    color: white;
+    background-color: darkcyan;
+    padding:6px;
+    border-radius: 3px;
+}
+.add{
+    width:55px;
+    padding:5px;
+}
+
+.plus{
+   padding:140px 190px 140px 190px;
+   font-weight: bold;
+   cursor:pointer;
+   color:black;
+}
+.team-name{
+    width:390px;
+    height:30px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border-radius: 2px;
+}
+.desc{
+    width:390px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}

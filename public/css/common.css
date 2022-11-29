@@ -9,6 +9,49 @@ body{
     justify-content: space-between;
     font-size: 20px;
 }
+head{
+    display: block;
+}
+@media(max-width:600px){
+    .nav-left,.nav-right{
+        display: none;
+    }
+    .my-meeting{
+        display: inline;
+        font-size: 25px;
+        font-weight: bold;
+        padding: 10px;
+    }
+    .navigation-bar{
+        position:relative;
+    }
+    .hamburger-menu{
+        position:absolute;
+        top: 0%;
+        right: 0%;
+        margin-top: 4px;
+        margin-right: 4px;
+        color: solid rgb(77, 73, 73);           
+        background-color: white; 
+    }
+    .hamburger-menu:hover{
+        cursor: pointer;
+    }
+}
+@media(min-width:600px)
+{
+    .hamburger-menu{
+        display: none;
+    }
+    .my-meeting{
+        display: none;
+    }
+    .nav-list>li{
+        list-style: none;
+        display:inline;
+
+}
+}
 .full-content{
   width:90%;
   margin:0% 5% 0% 5%;
@@ -20,11 +63,11 @@ ul{
     padding-top: 5px ; 
     padding-bottom: 5px ;  
 } 
-.nav-list>li{
+li{
      list-style: none;
      display:inline;
 }
-.nav{
+.navigator{
     color:black;
     opacity:0.8;
     padding:4px;
@@ -38,8 +81,7 @@ font-size: 16px;
 border: none;
 color: gray;
 }
+.display-none{
+    display: none;
+}
 
-.nav-right,.saturday{
-  font-size: 16px; 
-  color: gray; 
-}                                         

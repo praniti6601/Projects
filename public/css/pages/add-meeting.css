@@ -1,0 +1,46 @@
+body{
+    width:100%;
+    margin:0%;
+    padding:0;
+}
+.full-content{
+    width:90%;
+    margin:5%;
+  }
+  .search-content{
+    background-color: aqua;
+    display: block;
+    border-radius: 3px;
+    padding:15px;
+}
+h3{
+    padding: 12px 12px 0 12px;
+    margin-bottom: 0;
+    color: white;
+}
+
+.big-box{
+    width: 98%;
+    border-radius: 3px;
+    margin-top:8px;
+    margin-bottom: 8px;
+}
+p{
+    margin:0;
+    font-size: 15px;
+    color: white;
+  
+}
+.search-btn{
+    color: white;
+    background-color: darkcyan;
+    padding:6px;
+    border-radius: 3px;
+    border: none;
+}
+label{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

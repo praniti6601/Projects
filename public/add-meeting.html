@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add meetings</title>
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/pages/add-meeting.css">
+    <link rel="stylesheet" href="/css/utils.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+</head>
+<body>
+    <nav class="navigation-bar">
+        <ul class="nav-list nav-left">
+            <li><a href="/calendar.html" class="nav">Calendar</a></li>
+            <li><a href="/meeting.html" class="nav">Meetings</a></li>
+            <li><a href="/teams.html" class="nav">Teams</a></li>
+            <link rel="stylesheet" href="/css/pages/meetings.css">
+        </ul>
+        <div class="my-meeting">MyMeetings</div>
+        <ul class="nav-list nav-right">
+            <li>Hello <a href="#"> pragyayadav@gmail.com</li></a>&nbsp
+            <li><button type="button">Logout</button></li>
+     </ul>
+
+      <nav class="hamburger-menu">
+        <a class="hamburger" href=#>&#9776;</a>
+     </nav>
+    </nav>
+    <div class="full-content">
+    <h2>Meetings</h2>
+    <hr>
+    <div class="search">
+        <ul class="search-button">
+            <li><a href="/meeting.html">Filter/Search meetings</a></li>
+            <li><a href="/add-meeting.html">Add a meeting</a></li>
+        </ul>
+    </div>
+    <hr>
+    <div class="full-content search-content">
+        <h3>Add a new meeting</h3>
+        <hr>
+        <div class="form-maker"><form action="/action_page.php">
+            <label for="birthday">Date</label><br>
+            <input class="big-box" type="date" id="date" name="date">
+            <br>
+            <label for="time-choice">Start time(hh:mm)</label><br>
+            <select name="choose" id="time-choice">
+                <option class="dropdown-btn" value="search">0</option>
+                <option  value="search">1</option>
+                <option  value="search">2</option>
+                <option  value="search">3</option>
+                </select>&nbsp<span>:</span>
+                <select name="choose" id="Date-choice">
+                    <option class="dropdown-btn" value="search">0</option>
+                    <option  value="search">1</option>
+                    <option  value="search">2</option>
+                    <option  value="search">3</option>
+                    </select><br>
+                <label for="Date-choice">End time(hh:mm)</label><br>
+            <select name="choose" id="Date-choice">
+                <option class="dropdown-btn" value="search">0</option>
+                <option  value="search">0</option>
+                <option  value="search">1</option>
+                <option  value="search">2</option>
+                </select>
+                &nbsp<span>:</span>
+                <select name="choose" id="Date-choice">
+                    <option class="dropdown-btn" value="search">0</option>
+                    <option  value="search">1</option>
+                    <option  value="search">2</option>
+                    <option  value="search">3</option>
+                    </select><br>
+                <label for="text">Description</label>
+                <br/>
+                <textarea class="big-box" rows="2" cols="20" placeholder="What is the agenda of meeting?"></textarea> <br>
+               
+                
+                 <label for="text">EmailIDs of attendees, or team's short</label>
+                 <br/>
+                 <textarea placeholder="john@example.com, jane@example.com" class="big-box" rows="2" cols="20"></textarea>
+              
+                <p>Separate EmailIDs /team short names by commas-team short names always begins with @</p>
+                 <br>
+                 <button type="button" class="search-btn">Add a meeting</button>
+
+        </div>
+    </div>
+</body>
+</html>

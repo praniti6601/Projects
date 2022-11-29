@@ -6,67 +6,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendar</title>
     <link rel="stylesheet" href="/css/pages/calendar.css">
+    <link rel="stylesheet" href="/css/common.css">
     <link rel="stylesheet" href="/css/utils.css">
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <link href="dist/hamburgers.css" rel="stylesheet">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto' >
+    <link rel="stylesheet" type="text/html" href="node_modules/hamburger-menu">
     <link rel="stylesheet" href="/external/@fortawesome/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" href="/external/normalize.css">
+    <link rel="stylesheet" href="/external/@fortawesome/fontawesome-free/css/normalize.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
 </head>
 <body>
+<!--JavaSript code-->
+<script src="./js/calendar.js"></script> 
+<script src="./js/common.js"></script> 
     <nav class="navigation-bar">
-        <ul class="nav-list nav-left">
-            <li><a href="#" class="nav">Calendar</a></li>
-            <li><a href="/meetings.html" class="nav">Meetings</a></li>
-            <li><a href="#" class="nav">Teams</a></li>
+        <ul class="nav-list nav-left" id="navigate">
+            <li><a href="/calendar.html" class="navigator">Calendar</a></li>
+            <li><a href="/meeting.html" class="navigator">Meetings</a></li>
+            <li><a href="/teams.html" class="navigator">Teams</a></li>
+            <li><a href="/login.html" class="navigator">Login</a></li>
         </ul>
+        <div class="my-meeting">MyMeetings</div>
         <ul class="nav-list nav-right">
             <li>Hello <a href="#"> pragyayadav@gmail.com</li></a>&nbsp
             <li><button type="button">Logout</button></li>
      </ul>
-     <button class="hamburger" type="button">
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      </button>  
+
+      <nav class="hamburger-menu">
+        <a class="hamburger  main-menu-toggler" href='/'>&#9776;</a>
+     </nav>
     </nav>
     <div class="full-content">
     <h2>Calendar</h2>
     <hr>
     <div class="date">
         <div class="nav-list">
-            <p>12 September 2020<br>
-            <span class="saturday">Saturday</span></p>
-            <div class="date-picker"><form action="/action_page.php">
-                <label for="birthday"></label>
-                <input type="date" id="birthday" name="birthday"></form>
+           <p  id="date-picked">
+                <br>
+                <span class="saturday">Saturday</span>
+            </p>
+                <div class="date-picker">
+                    <form onsubmit="event.preventDefault();">
+                    <label for="birthday"></label>
+                    <input type="date" id="date-is" onclick="mydate()" name="birthday">
+                    <input type="submit" value="Submit">
+                    </form>
             </div>
         </div>
     </div>
-
     <div class="grids">
-       <div class="items">1</div>
-       <div class="items">2</div>
-       <div class="items">3</div>
-       <div class="items">4</div>
-       <div class="items">5</div>
-       <div class="items">
-       <div class="grid-content 6">
+        <div class="calendar-box"><span class="item-value">0</span>
+            <div class="items"></div> 
+        </div> 
+        
+        <div class="calendar-box"><span class="item-value">1</span>
+            <div class="items"></div> 
+        </div>
+
+        <div class="calendar-box"><span class="item-value">2</span>
+            <div class="items"></div> 
+        </div>
+
+        <div class="calendar-box"><span class="item-value">3</span>
+            <div class="items"></div> 
+        </div>
+       
+        <div class="calendar-box"><span class="item-value">4</span>
+            <div class="items"></div> 
+        </div>
+     
+        <div class="calendar-box"><span class="item-value">5</span>
+            <div class="items"></div> 
+        </div>
+
+        <div class="calendar-box"><span class="item-value">6</span> 
+        <div class="items">
+        <div class="grid-content 6">
         <h5>Project:Kickoff</h5>
         <hr>
         <p class="p-6">Attendees:pragya@gmail.com , shreya@gmail.com</p>
        </div>
-       
        </div>
-       <div class="items">7</div>
-       <div class="items">
+       </div>
+       <div class="calendar-box"><span class="item-value">7</span>
+        <div class="items"></div> 
+    </div>
+       
+    <div class="calendar-box">
+        <span class="item-value">8</span>
+        <div class="items">
         <div class="grid-content 8">
             <h5>AWS: Architecture</h5>
             <hr>
             <p class="p-8">Attendees:pragya@gmail.com , shreya@gmail.com</p>
+            <p>hkjokpkpkgjhihijo</p>
            </div>
        </div>
-       <div class="items">9</div>
+    </div>
+       
+    <div class="calendar-box"><span class="item-value">9</span>
+        <div class="items"></div> 
+    </div>
      </div>
+
+     <div class="calendar-box"><span class="item-value">10</span>
+        <div class="items"></div> 
+    </div>
+    <div class="calendar-box"><span class="item-value">11</span>
+        <div class="items"></div> 
+    </div>
+    <div class="calendar-box"><span class="item-value">12</span>
+        <div class="items"></div> 
+    </div>
+    <div class="calendar-box"><span class="item-value">13</span>
+        <div class="items"></div> 
+    </div>
     </div>
 </body>
 </html>

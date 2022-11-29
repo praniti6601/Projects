@@ -5,25 +5,100 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meetings</title>
-    <link rel="stylesheet" href="/css/pages/calendar.css">
+    <link rel="stylesheet" href="/css/pages/meetings.css">
+    <link rel="stylesheet" href="/css/common.css">
     <link rel="stylesheet" href="/css/utils.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <link href="dist/hamburgers.css" rel="stylesheet">
+    <link href="node_modules/hamburger-menu" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/external/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="/external/@fortawesome/fontawesome-free/css/normalize.css">
 </head>
 <body>
     <nav class="navigation-bar">
-        <ul class="nav-list nav-left">
-            <li><a href="#" class="nav">Calendar</a></li>
-            <li><a href="#" class="nav">Meetings</a></li>
-            <li><a href="#" class="nav">Teams</a></li>
+        <ul class="nav-list nav-left" id="navigate">
+            <li><a href="/calendar.html" class="navigator">Calendar</a></li>
+            <li><a href="/meeting.html" class="navigator">Meetings</a></li>
+            <li><a href="/teams.html" class="navigator">Teams</a></li>
+            <li><a href="/login.html" class="navigator">Login</a></li>
         </ul>
+        <div class="my-meeting">MyMeetings</div>
         <ul class="nav-list nav-right">
             <li>Hello <a href="#"> pragyayadav@gmail.com</li></a>&nbsp
             <li><button type="button">Logout</button></li>
-        </div>
+     </ul>
+
+      <nav class="hamburger-menu">
+        <a class="hamburger" href=#>&#9776;</a>
+     </nav>
     </nav>
     <div class="full-content">
     <h2>Meetings</h2>
     <hr>
+    <div class="search">
+        <ul class="search-button">
+            <li><a href="#">Filter/Search meetings</a></li>
+            <li><a href="/add-meeting.html">Add a meeting</a></li>
+        </ul>
+    </div>
+    <hr>
+    <div class="search-content">
+        <h3>Search for meetings</h3>
+        <hr>
+        <div class="form-maker"><form action="/action_page.php">
+            <label for="Date-choice">Date</label><br>
+            <select name="choose" id="Date-choice" class="big-box">
+                <option class="dropdown-btn" value="search">Today</option>
+                <option  value="search">All</option>
+                <option  value="search">Past</option>
+                <option  value="search">Upcoming</option>
+                </select><br>
+                <label for="text">Search for</label>
+                <br/>
+                <textarea rows="2" cols="20" placeholder="Search using words which describe the meeting"></textarea> <br>
+                 
+                 <button type="button" class="search-btn">Search</button>
+
+        </div>
+
+    </div>
+    <h2>Meetings matching search criteria</h2>
+    <hr>
+    <div class="criteria-box 1">
+    <h4>12 September 2020 <span class="time">06:00-07:00</span></h4>
+    <h5>Project:Kickoff</h5>
+    <button type="button" class="excuse-btn">Execuse yourself</button>
+
+    <hr>
+    <p class="attendees">Attendees:pragya@gmail.com , shreya@gmail.com</p>
+    <label for="selection"></label>
+    <select name="choose" id="selection" class="select-box">
+        <option  value="search">Select member</option>
+        <option  value="search">john@example.com</option>
+        <option  value="search">mark@example.com</option>
+        <option  value="search">jane@example.com</option>
+        </select>
+        <button type="button" class="search-btn add">Add</button>
+
+    </div>
+    <br>
+    <div class="criteria-box 2">
+        <h4>12 September 2020 <span class="time">08:00-09:30</span></h4>
+        <h5>AWS: Architecture</h5>
+        <button type="button" class="excuse-btn">Excuse yourself</button>
+    
+        <hr>
+        <p class="attendees">Attendees:pragya@gmail.com , shreya@gmail.com</p>
+        <label for="selection"></label>
+        <select name="choose" id="selection" class="select-box">
+            <option  value="search">Select member</option>
+            <option  value="search">john@example.com</option>
+            <option  value="search">mark@example.com</option>
+            <option  value="search">jane@example.com</option>
+            </select>
+            <button type="button" class="search-btn add">Add</button>
+    
+        </div>
+
+    </div>
 </body>
 </html>
